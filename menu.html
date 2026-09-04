@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - Dr Speed</title>
+<style>
+/* Réinitialisation de base */
+* {margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, sans-serif;
+}
+body {display: flex;flex-direction: column;min-height: 100vh;background-color: #121212;color: #e0e0e0;align-items: center;text-align: center;padding: 0 20px;
+}
+/* Barre de navigation */
+.navbar {width: 100%;max-width: 800px;background: rgba(255, 255, 255, 0.1);box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(10px);border: 1px solid rgba(255, 255, 255, 0.2);padding: 15px;text-align: center;font-size: 1.5em;font-weight: bold;color: #f5a623;border-radius: 15px;margin-top: 30px;margin-bottom: 20px;
+}
+.navbar:hover {background-color: #f5a623;color: #121212;
+}
+/* Image de profil */
+.profile-image {width: 200px;height: 200px;background: url('IMG/LOGO-removebg-preview.png') no-repeat center center;background-size: cover;border-radius: 50%;margin: 20px auto;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+main {max-width: 800px;width: 100%;padding: 20px;
+}
+/* Catégories de produits */
+.product-category {background-color: #1c1c1c;border-radius: 12px;border: 1px solid #333;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);margin-bottom: 30px;overflow: hidden;cursor: pointer;transition: all 0.3s ease;
+}
+.product-category:hover {background-color: #f5a623;color: #121212;
+}
+.product-category h2 {padding: 15px 20px;font-size: 1.8rem;color: #f5a623;background-color: #1f1f1f;margin: 0;
+}
+/* Contenu de la catégorie */
+.category-content {display: none;padding: 20px;background-color: #121212;cursor: default;
+}
+/* Produits individuels */
+.product-variety {background-color: #1f1f1f;padding: 15px;border-radius: 10px;border: 1px solid #333;margin-bottom: 20px;transition: all 0.3s ease;
+}
+.product-variety h3 {font-size: 1.5rem;color: #f5a623;margin-bottom: 10px;
+}
+.description {font-size: 1rem;color: #b3b3b3;line-height: 1.6;
+}
+.price-list {font-size: 1rem;color: #f5a623;margin-top: 10px;text-align: center;
+}
+/* Bouton de commande */
+.buy-button {display: inline-block;background-color: #f5a623;color: #121212;padding: 10px 20px;margin-top: 15px;border-radius: 5px;text-decoration: none;font-weight: bold;transition: all 0.3s ease;
+}
+.buy-button:hover {background-color: #ffba4b;
+}
+/* Vidéo et sous-variétés */
+.sub-variety {margin-top: 20px;text-align: center;
+}
+.sub-variety h4 {font-size: 1.2rem;color: #e0e0e0;margin-bottom: 10px;
+}
+.media {width: 100%;max-width: 100%;border-radius: 8px;margin-bottom: 20px;
+}
+.media.video {width: 100%;height: auto;aspect-ratio: 16 / 9;
+}
+footer {background-color: #1f1f1f;color: #e0e0e0;width: 100%;padding: 10px;text-align: center;font-size: 0.9rem;border-top: 1px solid #333;margin-top: auto;
+}
+h1 { font-size: 20px; }
+h2 { font-size: 20px; }
+</style>
+</head>
+<body>
+
+<!-- Barre de navigation -->
+<div class="navbar">Menu DR SPEED</div>
+
+<!-- Image de profil -->
+<div class="profile-image"></div>
+
+<main>
+
+<!-- 1. Catégorie : TOP HAZE -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>TOP HAZE 🏆🇳🇱🔥</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>TOP HAZE 🏆</h3>
+        <p class="description">
+          PREMIUM 🏆<br>
+          100% Hollandaise 🇳🇱
+        </p>
+        <div class="price-list">
+          <strong>25GR MINIMUM 🔝</strong><br><br>
+          25gr: 150€<br>
+          50gr: 250€<br>
+          100gr: 490€<br>
+          200gr: 950€<br>
+          500gr: 2000€<br>
+          1klg: 3900€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ Amnésia 🔥🍃</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5362.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 2 -->
+      <div class="sub-variety">
+        <h4>2️⃣ AmnésiaXSuperSilverHaze 🥶🍃</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5358.MOV" type="video/mp4">
+        </video>
+      </div>
+      
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+<!-- 2. Catégorie : CALI HOLLANDAISE -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>CALI HOLLANDAISE 🏆🇳🇱🇺🇸💎</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>CALI HOLLANDAISE 🏆</h3>
+        <p class="description">
+          PREMIUM TOP FIRE 🔥🇳🇱🇺🇸<br>
+          100% Hollandaise 🇳🇱<br>
+          Exclusif Batch / PRICE 🤩
+        </p>
+        <div class="price-list">
+          <strong>25GR MINIMUM 🔝</strong><br><br>
+          25gr: 180€<br>
+          50gr: 320€<br>
+          100gr: 580€<br>
+          200gr: 1150€<br>
+          500gr: 2500€<br>
+          1klg: 4800€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ TropCherryGas 🟣🍒⭐️</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5233.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+<!-- 3. Catégorie : GOLDEN TOP SHELF US -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>GOLDEN TOP SHELF US 🏆🇺🇸⭐️</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>TOP SHELF US 🏆</h3>
+        <p class="description">
+          GOLDEN STATE 🏆🇺🇸 FOLIE 🔥<br>
+          DIAMAND 💎<br>
+          10/10 MEILLEUR PRIX / EXCLU
+        </p>
+        <div class="price-list">
+          <strong>14GR MINIMUM 🔝</strong><br><br>
+          14gr: 200€<br>
+          28gr: 350€<br>
+          56gr: 600€<br>
+          112gr: 1100€<br>
+          224gr: 2000€<br>
+          448gr: 3850€ + 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ CherryPoppers 🍒🍬</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5574.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+<!-- 4. Catégorie : OMERTA STATIC -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>OMERTA STATIC 🥷🌋⚡️</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>OMERTA LABZ STATIC 🥷</h3>
+        <p class="description">
+          TERPS 🍓 BEST 💲🎫<br>
+          FOLIE SPECIALD 🔝🔥⭐️
+        </p>
+        <div class="price-list">
+          <strong>5GR MINIMUM 🔝</strong><br><br>
+          5gr: 110€<br>
+          10gr: 200€<br>
+          20gr: 380€<br>
+          50gr: 700€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ SorinaBurger 🍔💨</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5676.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 2 -->
+      <div class="sub-variety">
+        <h4>2️⃣ ForbiddenFruitXFruitJoy 🍒🍇</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5682.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 3 -->
+      <div class="sub-variety">
+        <h4>3️⃣ RainbowBelts 🍭🍬</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5679.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 4 -->
+      <div class="sub-variety">
+        <h4>4️⃣ PapayaXTmz 🥭🍈</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5673.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 5 -->
+      <div class="sub-variety">
+        <h4>5️⃣ Limoza 🍋‍🟩🍋</h4>
+        <video class="media video" loop muted controls>
+          <source src="IMG/IMG_5677.MOV" type="video/mp4">
+        </video>
+      </div>
+
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 DRSPEED - Tous droits réservés</p>
+</footer>
+
+<script>
+// Fonction pour basculer la visibilité du contenu de la catégorie
+function toggleCategoryContent(element, event) {
+  // Empêche le comportement si on clique directement sur une vidéo ou un bouton à l'intérieur
+  if (event.target.tagName === 'VIDEO' || event.target.tagName === 'SOURCE' || event.target.closest('a')) {
+    return;
+  }
+  const categoryContent = element.querySelector('.category-content');
+  categoryContent.style.display = categoryContent.style.display === 'block' ? 'none' : 'block';
+  element.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
