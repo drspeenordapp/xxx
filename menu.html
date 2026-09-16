@@ -45,14 +45,21 @@ main {max-width: 800px;width: 100%;padding: 20px;
 }
 .buy-button:hover {background-color: #ffba4b;
 }
-/* Vidéo et sous-variétés */
+/* Vidéo et sous-variétés corrigées (taille maîtrisée) */
 .sub-variety {margin-top: 20px;text-align: center;
 }
 .sub-variety h4 {font-size: 1.2rem;color: #e0e0e0;margin-bottom: 10px;
 }
 .media {width: 100%;max-width: 100%;border-radius: 8px;margin-bottom: 20px;
 }
-.media.video {width: 100%;height: auto;aspect-ratio: 16 / 9;
+.media.video {
+    width: 100%;
+    max-width: 320px; /* Limite la largeur sur grand écran pour garder un beau format vertical */
+    height: auto;
+    max-height: 450px; /* Empêche la vidéo de devenir immense en hauteur */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto; /* Centre la vidéo proprement */
 }
 footer {background-color: #1f1f1f;color: #e0e0e0;width: 100%;padding: 10px;text-align: center;font-size: 0.9rem;border-top: 1px solid #333;margin-top: auto;
 }
@@ -70,9 +77,177 @@ h2 { font-size: 20px; }
 
 <main>
 
-  <h4> ❌ SOLD OUT TOTAL ❌ </h4>
-  <h4> ⚙️ En cours de rechargement ⚙️ </h4>
+<!-- 1. Catégorie : TOP HAZE -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>TOP HAZE 🏆🇳🇱🔥</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>TOP HAZE 🏆</h3>
+        <p class="description">
+          PREMIUM 🏆 FAITE VITE<br>
+          100% Hollandaise 🇳🇱
+        </p>
+        <div class="price-list">
+          <strong>25GR MINIMUM 🔝</strong><br><br>
+          25gr: 150€<br>
+          50gr: 250€<br>
+          100gr: 490€<br>
+          200gr: 950€<br>
+          500gr: 2000€<br>
+          1klg: 3900€+ 📱
+        </div>
+      </div>
 
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ SuperSilverHaze 🥶🍃</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_5355.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+
+<!-- 2. Catégorie : THE LABZ FARM 90U -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>THE LABZ FARM 90U 🏆🔬🚀</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>THELABZFARM90U 🔬🥶</h3>
+        <p class="description">
+          CONSERVER 10/10<br>
+          TERPS 🍓 BEST 💲🎫
+        </p>
+        <div class="price-list">
+          <strong>25GR MINIMUM 🔝</strong><br><br>
+          25gr: 150€<br>
+          50gr: 250€<br>
+          100gr: 460€<br>
+          200gr: 900€<br>
+          500gr: 1900€<br>
+          1Kgl: 3600€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ PinkCandy 🌸🍬</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6187.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 2 -->
+      <div class="sub-variety">
+        <h4>2️⃣ BananaPunch 🍌🥊</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6179.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 3 -->
+      <div class="sub-variety">
+        <h4>3️⃣ TropSherbanger 🌴🍊</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6183.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 4 -->
+      <div class="sub-variety">
+        <h4>4️⃣ TropiPunch 🌴🍒</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6181.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+
+<!-- 3. Catégorie : FROZEN NO FARM -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>FROZEN NO FARM 🏆🔬🧊</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>RÉEL FRO/NO FARM 🏆🥶</h3>
+        <p class="description">
+          CONSERVER 10/10<br>
+          TERPS 🍓 BEST 💲🎫
+        </p>
+        <div class="price-list">
+          <strong>10GR MINIMUM 🔝</strong><br><br>
+          10gr: 150€<br>
+          25gr: 250€<br>
+          50gr: 400€<br>
+          100gr: 750€<br>
+          200gr: 1400€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ BarbaraBud 🍊🍑</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6250.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 2 -->
+      <div class="sub-variety">
+        <h4>2️⃣ MuelFuel ⛽️🍦</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6405.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
+
+
+<!-- 4. Catégorie : BLOOM PRESS WPFF -->
+<section class="product-category" onclick="toggleCategoryContent(this, event)">
+    <h2>BLOOM PRESS WPFF ⭐️🇺🇸🆕🥶</h2>
+    <div class="category-content">
+      <div class="product-variety">
+        <h3>PREMIUM WPFF ⚡️⭐️🇺🇸</h3>
+        <p class="description">
+          BLOOM PRESS WPFF 🏆<br>
+          TRUC 2DINGUE/TOPPRIX
+        </p>
+        <div class="price-list">
+          5gr: 200€<br>
+          10gr: 350€<br>
+          25gr: 750€<br>
+          50gr: 1400€<br>
+          100gr: 2600€+ 📱
+        </div>
+      </div>
+
+      <!-- Variété 1 -->
+      <div class="sub-variety">
+        <h4>1️⃣ MorrocanPeaches 🍑⛽️</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6232.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Variété 2 -->
+      <div class="sub-variety">
+        <h4>2️⃣ GiraffePuzzy 🌈🍭</h4>
+        <video class="media video" loop muted controls playsinline>
+          <source src="IMG/IMG_6237.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <a href="https://t.me/drspeednord1" target="_blank" class="buy-button">Commander 📱</a>
+    </div>
+</section>
 
 </main>
 
